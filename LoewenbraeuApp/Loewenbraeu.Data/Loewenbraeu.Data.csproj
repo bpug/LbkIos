@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{060FABF0-5CE7-478A-97B5-5993AB42A39D}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Loewenbraeu.Data</RootNamespace>
+    <ReleaseVersion>1.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="wsdl -l:CS -n:&quot;Loewenbraeu.Data.Service&quot; -o:/${ProjectDir}/Service/LbkProxy.cs  https://lbkmobile.loewenbraeukeller.com/service/service1.asmx?WSDL" />
+      </CustomCommands>
+    </CustomCommands>
+    <AssemblyName>Loewenbraeu.Data</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="wsdl -l:CS -n:&quot;Loewenbraeu.Data.Service&quot; -o:/${ProjectDir}/Service/LbkProxy.cs  https://lbkmobile.loewenbraeukeller.com/service/service1.asmx?WSDL" />
+      </CustomCommands>
+    </CustomCommands>
+    <AssemblyName>Loewenbraeu.Data</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Distribution</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LoewenbraeuData</AssemblyName>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="wsdl -l:CS -n:&quot;Loewenbraeu.Data.Service&quot; -o:/${ProjectDir}/Service/LbkProxy.cs  https://lbkmobile.loewenbraeukeller.com/service/service1.asmx?WSDL" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Repository\QuizRepository.cs" />
+    <Compile Include="Repository\TagesKarteRepository.cs" />
+    <Compile Include="Repository\VideoRespository.cs" />
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="Repository\QuizVoucherRepository.cs" />
+    <Compile Include="Repository\ReservationRepository.cs" />
+    <Compile Include="Repository\BaseDBRepository.cs" />
+    <Compile Include="Partials\Reservation.Partial.cs" />
+    <Compile Include="Repository\RaumRepository.cs" />
+    <Compile Include="Partials\Event.Partial.cs" />
+    <Compile Include="Repository\HistoryRepository.cs" />
+    <Compile Include="Service\ServiceAgent.cs" />
+    <Compile Include="Mappings\QuizMapping.cs" />
+    <Compile Include="Mappings\VideoMapping.cs" />
+    <Compile Include="Service\LbkProxy.cs" />
+    <Compile Include="Partials\EventOrder.cs" />
+    <Compile Include="Mappings\EventMapping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Loewenbraeu.Model\Loewenbraeu.Model.csproj">
+      <Project>{873DE4B6-3511-46C2-BE05-E53147398B6A}</Project>
+      <Name>Loewenbraeu.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loewenbraeu.Core\Loewenbraeu.Core.csproj">
+      <Project>{27E31A29-6AE3-42CB-A2DC-AC22E262AC13}</Project>
+      <Name>Loewenbraeu.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loewenbraeu.Sqlite\Loewenbraeu.Sqlite.csproj">
+      <Project>{8C321720-D735-4B70-9C48-AE4738EF80A3}</Project>
+      <Name>Loewenbraeu.Sqlite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Database\" />
+    <Folder Include="Partials\" />
+    <Folder Include="Service\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+</Project>

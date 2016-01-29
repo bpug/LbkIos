@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Löwenbräukeller</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>icon_lbk_29_29New.png</string>
+		<string>icon_lbk_58_58New.png</string>
+		<string>image/buttons/lbk_appNew.png</string>
+		<string>image/buttons/lbk_appNew@2x.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>de.ip-connect.Loewenbraeu</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.8</string>
+	<key>MinimumOSVersion</key>
+	<string>5.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

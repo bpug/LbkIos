@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHistory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <History>
+    <Title>Wie alles begann</Title>
+    <Description>Ludwig Brey, Brauer und Eigentümer der Löwenbrauerei, erwirbt das Anwesen des Riesenfeldwirts, das später der „Löwenbräukeller" werden wird.</Description>
+    <ImageUrl>image/historie/historie_1.jpg</ImageUrl>
+	<Date>1861</Date>
+  </History>
+  <History>
+    <Title>Wies'n-Startschuss</Title>
+    <Description>Michael Schottenhamel gründet das erste „Wies'n-Zelt" auf der Theresienwiese, einen kleinen Bretterschuppen mit Platz für 50 Personen.</Description>
+    <ImageUrl>image/historie/historie_2.jpg</ImageUrl>
+	<Date>1867</Date>
+  </History>
+  <History>
+    <Title>Baubeginn</Title>
+    <Description>Der Löwenbräukeller wird nach den Plänen von Prof. Albert Schmidt gebaut.</Description>
+    <ImageUrl>image/historie/historie_3.jpg</ImageUrl>
+	<Date>1882</Date>
+  </History>
+  <History>
+    <Title>Aufgesperrt</Title>
+    <Description>Der Löwenbräukeller wird unter riesigem Andrang der Öffentlichkeit eröffnet. Sensationell war seinerzeit der erstmalige Einsatz von Tischtüchern und Servietten. Zudem mussten Gäste ihren Keferloher Bierkrug nicht mehr selbst in der offenen Brente spülen.</Description>
+    <ImageUrl>image/historie/historie_4.jpg</ImageUrl>
+	<Date>14. Juni 1883</Date>
+  </History>
+  <History>
+    <Title>Gauklergaudi</Title>
+    <Description>Mit der Veranstaltung von Redouten (Maskenbällen) wird der Löwenbräukeller zur Hochburg des Münchner Faschings. Berühmt und nach wie vor im Löwenbräukeller beheimatet sind besonders die Feste der „Damischen Ritter".</Description>
+    <ImageUrl>image/historie/historie_5.jpg</ImageUrl>
+	<Date>seit 1890</Date>
+  </History>
+  <History>
+    <Title>Aufgetürmt</Title>
+    <Description>Der Löwenbräukeller wird umgebaut und um seinen hübschen Turm erweitert, dessen Gestaltung Prof. Friedrich von Thiersch, dem Erbauer des Münchner Justizpalastes, oblag.</Description>
+    <ImageUrl>image/historie/historie_6.jpg</ImageUrl>
+	<Date>1894</Date>
+  </History>
+  <History>
+    <Title>Aufgespielt</Title>
+    <Description>Weltbekannte Kapellen wie die Wiener Deutschmeister und der amerikanische Marschkomponist John Philipp Sousa treten unter stürmischem Publikumsandrang im Löwenbräukeller auf.</Description>
+    <ImageUrl>image/historie/historie_7.jpg</ImageUrl>
+	<Date>um 1900</Date>
+  </History>
+  <History>
+    <Title>Löwen-Einzug</Title>
+    <Description>Der Löwenbräukeller wird erneut umgebaut und modernisiert. Der deutsche Bildhauer Wilhelm von Rümann modelliert den auf der Terrasse über dem Haupteingang ruhenden Löwen, das Wahrzeichen des Löwenbräukellers.</Description>
+    <ImageUrl>image/historie/historie_8.jpg</ImageUrl>
+    <Date>1910/1911</Date>
+  </History>
+  <History>
+    <Title>Kriegswirren</Title>
+    <Description>Im zweiten Weltkrieg erleidet der Löwenbräukeller schwere Schäden. Infolge eines Luftangriffs am 17.12.1944 wird der Festsaal völlig zerstört.</Description>
+    <ImageUrl>image/historie/historie_9.jpg</ImageUrl>
+	<Date>17.12.1944</Date>
+  </History>
+  <History>
+    <Title>Wiederaufbau</Title>
+    <Description>Der Festsaal des Löwenbräukellers wird wieder aufgebaut und im Zuge desen die Bühne zur Westseite hin verlegt. Zudem entsteht die Galerie an der Ostseite.</Description>
+    <ImageUrl>image/historie/historie_10.jpg</ImageUrl>
+	<Date>1950</Date>
+  </History>
+  <History>
+    <Title>O’ zapft is!</Title>
+    <Description>Thomas Wimmer, der Münchner Nachkriegs-Oberbürgermeister, erklärt mit seinem legendären O’ zapft is! das Schottenhamel-Zelt zum Schauplatz des offiziellen Wies’n-Anstichs.</Description>
+    <ImageUrl>image/historie/historie_11.jpg</ImageUrl>
+    <Date>1950</Date>
+  </History>
+  <History>
+    <Title>Wiedereinzug</Title>
+    <Description>Der Festsaal des Löwenbräukellers steht für Feierlichkeiten endlich wieder zur Verfügung.</Description>
+    <ImageUrl>image/historie/historie_12.jpg</ImageUrl>
+	<Date>1955</Date>
+  </History>
+	<History>
+    <Title>Renovierung</Title>
+    <Description>Die gesamte Fassade und der Turm des Löwenbräukellers werden renoviert. Und auf der großen Galerie über dem Festsaal darf wieder ausgiebig gefeiert werden.</Description>
+    <ImageUrl>image/historie/historie_13.jpg</ImageUrl>
+    <Date>1958</Date>
+  </History>
+	<History>
+    <Title>Brandkatastrophe</Title>
+    <Description>Festsaal, Galerie, Balkon und Bühnenhaus brennen vollständig aus.</Description>
+    <ImageUrl>image/historie/historie_14.jpg</ImageUrl>
+	<Date>23. Juli 1986</Date>
+  </History>
+	<History>
+    <Title>Wies’n-Wirte aktuell</Title>
+    <Description>Christian Schottenhamel übernimmt die Festhalle auf dem Oktoberfest gemeinsam mit seinem Cousin.</Description>
+    <ImageUrl>image/historie/historie_15.jpg</ImageUrl>
+    <Date>seit 1987</Date>
+  </History>
+	<History>
+    <Title>Tradition im Doppelpack</Title>
+    <Description>Christian und Johanna Schottenhamel werden die neuen Wirte im Löwenbräukeller.</Description>
+    <ImageUrl>image/historie/historie_16.jpg</ImageUrl>
+	<Date>2. Februar 2008</Date>
+  </History>
+	<History>
+    <Title>Tradition trifft Moderne</Title>
+    <Description>Der Löwenbräukeller wird aufwändig renoviert und mit modernster Küchen- und Veranstalungstechnik ausgestattet. Sensationell und wunderschön sind die neuen bewirtschafteten Freiluft-Hochterassen, die auch vom Festsaal aus zugänglich sind.</Description>
+    <ImageUrl>image/historie/historie_17.jpg</ImageUrl>
+	<Date>März bis November 2008</Date>
+  </History>
+</ArrayOfHistory>

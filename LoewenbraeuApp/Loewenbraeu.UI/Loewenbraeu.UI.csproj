@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{894CDAEE-57B0-414C-A84C-5C8E23DBEBCF}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Loewenbraeu.UI</RootNamespace>
+    <ReleaseVersion>1.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchExtraArgs>--new-refcount</MtouchExtraArgs>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchSdkVersion>5.0</MtouchSdkVersion>
+    <AssemblyName>Loewenbraeu</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+    <AssemblyName>Loewenbraeu</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchExtraArgs>--new-refcount</MtouchExtraArgs>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>Loewenbraeu</AssemblyName>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n />
+    <IpaPackageName>Loewenbraeu</IpaPackageName>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata>Loewenbraeu 1.0.0</IpaMetadata>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <AssemblyName>Loewenbraeu</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LoewenbraeuUI</AssemblyName>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>4D5D7481-C38D-44BB-B9F9-79A55F5F05EE</CodesignProvision>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <IpaPackageName />
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Distribution</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LoewenbraeuUI</AssemblyName>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchI18n />
+    <IpaPackageName />
+    <CodesignProvision>4D5D7481-C38D-44BB-B9F9-79A55F5F05EE</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\AppStore</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LoewenbraeuUI</AssemblyName>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Distribution</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LoewenbraeuUI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist" />
+    <None Include="image\raueme\thumbnails\LoewenEmpore1%402x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Views\RootViewController.xib.cs">
+      <DependentUpon>RootViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RootViewController.xib.designer.cs">
+      <DependentUpon>RootViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacebookViewController.cs" />
+    <Compile Include="Views\Quiz\QuizQuestionView.cs" />
+    <Compile Include="Views\Quiz\QuizResultView.cs" />
+    <Compile Include="Utilites\TableCellFactory.cs" />
+    <Compile Include="Views\Quiz\QuizHelpViewController.cs" />
+    <Compile Include="Views\Quiz\QuizHelpViewController.designer.cs" />
+    <Compile Include="Views\Reservierung\ReservierungViewController.cs" />
+    <Compile Include="Views\Reservierung\ReservierungViewController.designer.cs">
+      <DependentUpon>ReservierungViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reservierung\ReservierungController.cs" />
+    <Compile Include="Views\Reservierung\CodeConfirmViewController.cs" />
+    <Compile Include="Views\Reservierung\CodeConfirmViewController.designer.cs">
+      <DependentUpon>CodeConfirmViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Historie\HistoriePageController.cs" />
+    <Compile Include="Views\Historie\HistorieViewController.cs" />
+    <Compile Include="Cells\RaumCell.cs" />
+    <Compile Include="Cells\EventCell.cs" />
+    <Compile Include="Views\Raum\RaumViewController.cs" />
+    <Compile Include="Cells\VideoCell.cs" />
+    <Compile Include="PickerModels\SeatsPickerModel.cs" />
+    <Compile Include="Controllers\LbkDialogViewController.cs" />
+    <Compile Include="Views\Event\EventsViewController.cs" />
+    <Compile Include="Views\Video\VideoViewController.cs" />
+    <Compile Include="Views\Video\MoviePlayerViewController.cs" />
+    <Compile Include="Views\Kontakt\KontaktViewController.cs" />
+    <Compile Include="Views\Kontakt\KontaktViewController.designer.cs">
+      <DependentUpon>KontaktViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Kontakt\LbkMapViewController.cs" />
+    <Compile Include="Views\Kontakt\DirektKontakController.cs" />
+    <Compile Include="Controllers\BaseViewController.cs" />
+    <Compile Include="Cells\DishCell.cs" />
+    <Compile Include="Views\Tageskarte\DishOfDayViewController.cs" />
+    <Compile Include="Views\Gallery\GalleryController.cs" />
+    <Compile Include="Views\Reservierung\ConfirmReservationController.cs" />
+    <Compile Include="Utilites\Resources.cs" />
+    <Compile Include="Views\Quiz\QuizStartViewController.cs" />
+    <Compile Include="Controllers\PagedViewController.cs" />
+    <Compile Include="Views\Raum\RaumDetailViewController.cs" />
+    <Compile Include="Views\Raum\RaumPagesDataSource.cs" />
+    <Compile Include="Cells\VoucherCell.cs" />
+    <Compile Include="Controllers\BaseHudViewController.cs" />
+    <Compile Include="Utilites\LBKButton.cs" />
+    <Compile Include="Mappings\PictureMapping.cs" />
+    <Compile Include="Views\Quiz\QuizViewController.designer.cs" />
+    <Compile Include="Views\Quiz\QuizVoucherViewController.cs" />
+    <Compile Include="Views\Quiz\QuizViewController.cs" />
+    <Compile Include="Controlls\UIStyledPageControl.cs" />
+    <Compile Include="Utilites\PushNotifications.cs" />
+    <Compile Include="Controlls\RoundedRectView.cs" />
+    <Compile Include="Views\Kontakt\KontaktIpcViewController.cs" />
+    <Compile Include="Utilites\UserDefaults.cs" />
+    <Compile Include="Views\Speisekarte\SpeisekarteViewController.cs" />
+    <Compile Include="Controllers\BaseNavigationController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="image\buttons\bilder.png" />
+    <Content Include="image\buttons\events.png" />
+    <Content Include="image\buttons\facebook.png" />
+    <Content Include="image\buttons\historie.png" />
+    <Content Include="image\buttons\kontakt.png" />
+    <Content Include="image\buttons\quiz.png" />
+    <Content Include="image\buttons\reservierung.png" />
+    <Content Include="image\buttons\tageskarte.png" />
+    <Content Include="image\buttons\videos.png" />
+    <Content Include="image\buttons\raeume.png" />
+    <Content Include="image\preloader.png" />
+    <Content Include="image\quiz\BAY.jpg" />
+    <Content Include="image\quiz\BIE.jpg" />
+    <Content Include="de.lproj\Localizable.strings" />
+    <Content Include="image\quiz\LBK.jpg" />
+    <Content Include="image\quiz\MUC.jpg" />
+    <Content Include="image\quiz\FOD.jpg" />
+    <Content Include="image\quiz\SCH.jpg" />
+    <Content Include="image\raueme\thumbnails\Bennosaal.jpg" />
+    <Content Include="image\raueme\thumbnails\Braeustueberl.jpg" />
+    <Content Include="image\raueme\thumbnails\DachauerStube.jpg" />
+    <Content Include="image\raueme\thumbnails\Festsaal.jpg" />
+    <Content Include="image\raueme\thumbnails\Galeriesaal.jpg" />
+    <Content Include="image\raueme\thumbnails\Gartenanbau.jpg" />
+    <Content Include="image\raueme\thumbnails\Loewenterasse.jpg" />
+    <Content Include="image\raueme\thumbnails\Terrasse.jpg" />
+    <Content Include="image\raueme\thumbnails\Turmzimmer.jpg" />
+    <Content Include="image\historie\historie_1.jpg" />
+    <Content Include="image\historie\historie_2.jpg" />
+    <Content Include="image\historie\historie_3.jpg" />
+    <Content Include="image\historie\historie_4.jpg" />
+    <Content Include="image\historie\historie_5.jpg" />
+    <Content Include="image\historie\historie_6.jpg" />
+    <Content Include="image\historie\historie_7.jpg" />
+    <Content Include="image\historie\historie_9.jpg" />
+    <Content Include="image\historie\historie_10.jpg" />
+    <Content Include="image\historie\historie_11.jpg" />
+    <Content Include="image\historie\historie_12.jpg" />
+    <Content Include="image\historie\historie_13.jpg" />
+    <Content Include="image\historie\historie_14.jpg" />
+    <Content Include="image\historie\historie_15.jpg" />
+    <Content Include="image\historie\historie_16.jpg" />
+    <Content Include="image\historie\historie_17.jpg" />
+    <Content Include="image\historie\historie_8.jpg" />
+    <Content Include="Data\raum.xml" />
+    <Content Include="Data\history.xml" />
+    <Content Include="image\background\background.png" />
+    <Content Include="image\background\background%402x.png" />
+    <Content Include="image\buttons\arrow-left.png" />
+    <Content Include="image\buttons\arrow-right.png" />
+    <Content Include="image\buttons\map.png" />
+    <Content Include="image\buttons\map%402x.png" />
+    <Content Include="image\buttons\phone.png" />
+    <Content Include="image\buttons\phone%402x.png" />
+    <Content Include="image\buttons\lbk_map.png" />
+    <Content Include="image\raueme\raum-HG.png" />
+    <Content Include="image\raueme\raum-HG%402x.png" />
+    <Content Include="image\raueme\thumbnails\Bennosaal%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Braeustueberl%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\DachauerStube%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Festsaal%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Galeriesaal%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Gartenanbau%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Loewenterasse%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Terrasse%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Turmzimmer%402x.jpg" />
+    <Content Include="image\buttons\lbk_button.png" />
+    <Content Include="image\buttons\lbk_button%402x.png" />
+    <Content Include="image\buttons\speisekarte.png" />
+    <Content Include="image\activeDot.jpg" />
+    <Content Include="image\inactiveDot.jpg" />
+    <Content Include="image\quiz\Krug.png" />
+    <Content Include="image\quiz\Krug%402x.png" />
+    <Content Include="image\background\quiz_start.png" />
+    <Content Include="image\background\quiz_start%402x.png" />
+    <Content Include="image\kontakt\ip-connect.png" />
+    <Content Include="image\kontakt\ip-connect%402x.png" />
+    <Content Include="image\raueme\TurmzimmerZweiterStock.jpg" />
+    <Content Include="image\raueme\TurmzimmerErsterStock2.jpg" />
+    <Content Include="image\raueme\TurmzimmerErsterStock1.jpg" />
+    <Content Include="image\raueme\LoewenTerrasse2.jpg" />
+    <Content Include="image\raueme\LoewenTerrasse1.jpg" />
+    <Content Include="image\raueme\LoewenEmpore2.jpg" />
+    <Content Include="image\raueme\LoewenEmpore1.jpg" />
+    <Content Include="image\raueme\Hochterrasse2.jpg" />
+    <Content Include="image\raueme\Hochterrasse1.jpg" />
+    <Content Include="image\raueme\Gartenanbau2.jpg" />
+    <Content Include="image\raueme\Gartenanbau1.jpg" />
+    <Content Include="image\raueme\Galeriesaal2.jpg" />
+    <Content Include="image\raueme\Galeriesaal1.jpg" />
+    <Content Include="image\raueme\Filserstube2.jpg" />
+    <Content Include="image\raueme\Filserstube1.jpg" />
+    <Content Include="image\raueme\Festsaal_Galadinner.jpg" />
+    <Content Include="image\raueme\Festsaal_Business.jpg" />
+    <Content Include="image\raueme\Festsaal_Buehnenbar.jpg" />
+    <Content Include="image\raueme\Festsaal_Ballnacht.jpg" />
+    <Content Include="image\raueme\Festsaal_Balkon.jpg" />
+    <Content Include="image\raueme\DachauerStube2.jpg" />
+    <Content Include="image\raueme\DachauerStube1.jpg" />
+    <Content Include="image\raueme\Braueustueberl1.jpg" />
+    <Content Include="image\raueme\Bennosaal2.jpg" />
+    <Content Include="image\raueme\TurmzimmerZweiterStock%402x.jpg" />
+    <Content Include="image\raueme\TurmzimmerErsterStock2%402x.jpg" />
+    <Content Include="image\raueme\TurmzimmerErsterStock1%402x.jpg" />
+    <Content Include="image\raueme\LoewenEmpore2%402x.jpg" />
+    <Content Include="image\raueme\LoewenEmpore1%402x.jpg" />
+    <Content Include="image\raueme\Hochterrasse2%402x.jpg" />
+    <Content Include="image\raueme\Hochterrasse1%402x.jpg" />
+    <Content Include="image\raueme\Gartenanbau2%402x.jpg" />
+    <Content Include="image\raueme\Gartenanbau1%402x.jpg" />
+    <Content Include="image\raueme\Galeriesaal2%402x.jpg" />
+    <Content Include="image\raueme\Galeriesaal1%402x.jpg" />
+    <Content Include="image\raueme\Filserstube2%402x.jpg" />
+    <Content Include="image\raueme\Filserstube1%402x.jpg" />
+    <Content Include="image\raueme\Festsaal_Galadinner%402x.jpg" />
+    <Content Include="image\raueme\Festsaal_Business%402x.jpg" />
+    <Content Include="image\raueme\Festsaal_Buehnenbar%402x.jpg" />
+    <Content Include="image\raueme\Festsaal_Ballnacht%402x.jpg" />
+    <Content Include="image\raueme\Festsaal_Balkon%402x.jpg" />
+    <Content Include="image\raueme\DachauerStube2%402x.jpg" />
+    <Content Include="image\raueme\DachauerStube1%402x.jpg" />
+    <Content Include="image\raueme\Braueustueberl1%402x.jpg" />
+    <Content Include="image\raueme\Bennosaal2%402x.jpg" />
+    <Content Include="image\raueme\Braueustueberl2.jpg" />
+    <Content Include="image\raueme\Braueustueberl2%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\Filserstube.jpg" />
+    <Content Include="image\raueme\thumbnails\Filserstube%402x.jpg" />
+    <Content Include="image\raueme\LoewenTerrasse1%402x.jpg" />
+    <Content Include="image\raueme\LoewenTerrasse2%402x.jpg" />
+    <Content Include="image\raueme\thumbnails\LoewenEmpore1.jpg" />
+    <Content Include="image\buttons\mail.png" />
+    <Content Include="image\buttons\mail%402x.png" />
+    <Content Include="Data\kontakt2.html" />
+    <Content Include="Data\kontakt.html" />
+    <Content Include="image\buttons\advise.png" />
+    <Content Include="icon_lbk_29_29New.png" />
+    <Content Include="icon_lbk_58_58New.png" />
+    <Content Include="image\buttons\lbk_appNew.png" />
+    <Content Include="image\buttons\lbk_appNew%402x.png" />
+    <Content Include="Default-568h%402x.png" />
+    <Content Include="image\raueme\Bennosaal1%402x.jpg" />
+    <Content Include="image\raueme\Bennosaal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Loewenbraeu.Model\Loewenbraeu.Model.csproj">
+      <Project>{873DE4B6-3511-46C2-BE05-E53147398B6A}</Project>
+      <Name>Loewenbraeu.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loewenbraeu.Data\Loewenbraeu.Data.csproj">
+      <Project>{060FABF0-5CE7-478A-97B5-5993AB42A39D}</Project>
+      <Name>Loewenbraeu.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loewenbraeu.Core\Loewenbraeu.Core.csproj">
+      <Project>{27E31A29-6AE3-42CB-A2DC-AC22E262AC13}</Project>
+      <Name>Loewenbraeu.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loewenbraeu.ImageGallery\Loewenbraeu.ImageGallery.csproj">
+      <Project>{244E9285-5C41-4FCE-A35A-A411398BA95B}</Project>
+      <Name>Loewenbraeu.ImageGallery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\MonoTouch.Dialog\MonoTouch.Dialog\MonoTouch.Dialog.csproj">
+      <Project>{3FFBFFF8-5560-4EDE-82E5-3FFDFBBA8A50}</Project>
+      <Name>MonoTouch.Dialog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\RootViewController.xib" />
+    <InterfaceDefinition Include="Views\Quiz\QuizHelpViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservierung\ReservierungViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservierung\CodeConfirmViewController.xib" />
+    <InterfaceDefinition Include="Views\Kontakt\KontaktViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\buttons\" />
+    <Folder Include="Views\Quiz\" />
+    <Folder Include="Utilites\" />
+    <Folder Include="Views\Tageskarte\" />
+    <Folder Include="Views\Reservierung\" />
+    <Folder Include="image\quiz\" />
+    <Folder Include="de.lproj\" />
+    <Folder Include="image\historie\" />
+    <Folder Include="Views\Historie\" />
+    <Folder Include="image\raueme\" />
+    <Folder Include="image\raueme\thumbnails\" />
+    <Folder Include="Views\Raum\" />
+    <Folder Include="Views\Video\" />
+    <Folder Include="Data\" />
+    <Folder Include="PickerModels\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Event\" />
+    <Folder Include="image\background\" />
+    <Folder Include="Views\Kontakt\" />
+    <Folder Include="Docs\" />
+    <Folder Include="Views\Gallery\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Controlls\" />
+    <Folder Include="image\kontakt\" />
+    <Folder Include="Views\Speisekarte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="icon_lbk_512_512New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Default%402x.png" />
+    <BundleResource Include="Default.png" />
+  </ItemGroup>
+</Project>
